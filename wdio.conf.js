@@ -50,8 +50,10 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
-    }],
+    maxInstances: 5,
+    browserName: 'MicrosoftEdge',
+    acceptInsecureCerts: true
+}],
 
     //
     // ===================
@@ -84,7 +86,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    // baseUrl: 'http://localhost:8080',
+    baseUrl: 'https://practicesoftwaretesting.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
